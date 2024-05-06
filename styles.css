@@ -17,7 +17,7 @@ body {
 }
 .main {
     margin-inline: 37.5%;
-    margin-block: 2.5%;
+    margin-block: 5%;
     background-color: var(--DarkGrey);
     display: flex;
     flex-direction: column;
@@ -74,6 +74,7 @@ body {
     justify-content: center;
     align-items: center;
     margin-top: 5%;
+    cursor: pointer;
     
 }
 
