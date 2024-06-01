@@ -10,14 +10,21 @@
     --Grey: hsl(0, 0%, 20%);
     --DarkGrey: hsl(0, 0%, 12%);
     --OffBlack: hsl(0, 0%, 8%);
+
     font-family: "Inter", serif;
 }
 body {
+    min-height: 100svh;
     background-color: var(--OffBlack);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
 }
-.main {
-    margin-inline: 37.5%;
-    margin-block: 5%;
+.card {
+    width: 26rem;
+    margin: 2rem;
     background-color: var(--DarkGrey);
     display: flex;
     flex-direction: column;
@@ -29,31 +36,32 @@ body {
     padding-block: 40px;
     
 }
-.main img {
+.card img {
     width: 20%;
     border-radius: 50%;
     margin-bottom: 30px;
 }
-.main .name {
+.card .name {
     color: var(--White);
     font-size: 25px;
     padding-inline: 30px;
     
 }
 
-.main .address {
+.card .address {
     color: var(--Green);
-    
+    font-size: .9rem;
     margin-block: 10px;
     padding-inline: 30px;
+    font-weight: 700;
    
 }
-.main .detail {
+.card .detail {
     color: var(--White);
     margin-block: 20px;
     padding-inline: 22.5px;
 }
-.main .social {
+.card .social {
     width: 80%;
     height: 50px;
     border-radius: 10px;
@@ -64,7 +72,7 @@ body {
     font-weight: 700;
 }
 
-.main .social:hover {
+.card .social:hover {
     background-color: var(--Green);
 }
 .attribution {
@@ -76,6 +84,10 @@ body {
     margin-top: 5%;
     cursor: pointer;
     
+}
+.attribution a {
+    text-decoration: none;
+    color: var(--White);
 }
 
 @media  (max-width: 375px) {
